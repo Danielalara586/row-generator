@@ -1,0 +1,21 @@
+{
+  "name": "memorygame",
+  "version": "1.0.0",
+  "description": "JS DOM Practice",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "node-sass -watch --output-style expanded --precision 6 src/assets/scss/style.scss -o dist/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SCSS",
+    "JavaScript"
+  ],
+  "author": "Daniela Lara",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
