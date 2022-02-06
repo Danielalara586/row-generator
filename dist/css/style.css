@@ -1,4 +1,4 @@
-/* line 1, src/assets/scss/style.scss */
+/* line 4, src/assets/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
@@ -6,17 +6,60 @@
   box-sizing: border-box;
 }
 
-/* line 8, src/assets/scss/style.scss */
+/* line 11, src/assets/scss/style.scss */
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
 }
 
-/* line 13, src/assets/scss/style.scss */
+/* line 16, src/assets/scss/style.scss */
 body {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* line 24, src/assets/scss/style.scss */
+main {
+  min-width: 800px;
+}
+
+/* line 28, src/assets/scss/style.scss */
+table {
+  margin: auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+/* line 33, src/assets/scss/style.scss */
+table caption {
+  background-color: #f79646;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 8px 0;
+}
+
+/* line 41, src/assets/scss/style.scss */
+table thead th {
+  padding: 8px 0;
+  background-color: #fde9d9;
+}
+
+/* line 47, src/assets/scss/style.scss */
+table tbody th {
+  padding: 8px 0;
+}
+
+/* line 50, src/assets/scss/style.scss */
+table tbody tr:nth-child(odd) {
+  background-color: #ffcbbb;
+}
+
+/* line 53, src/assets/scss/style.scss */
+table tbody tr:nth-child(even) {
+  background-color: #fff;
 }

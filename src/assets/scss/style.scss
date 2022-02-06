@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 *{
     padding: 0;
     margin: 0;
@@ -17,3 +20,39 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+main{
+    min-width: 800px;
+}
+
+table{
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    caption{
+        background-color: $caption-background-color;
+        color: $caption-font-color;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 8px 0;
+    }
+    thead{
+        th{
+            padding: 8px 0;
+            background-color: $th-background-color;
+        }
+    }
+    tbody{
+        th{
+            padding: 8px 0;
+        }
+        tr:nth-child(odd){
+            background-color: $tr-background-color;
+        }
+        tr:nth-child(even){
+            background-color: $caption-font-color;
+        }
+    }
+}
+
