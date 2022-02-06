@@ -31,13 +31,29 @@ table{
     border-collapse: collapse;
     border-style: hidden;
     caption{
+        position: relative;
         background-color: $caption-background-color;
         color: $caption-font-color;
         font-weight: bold;
         letter-spacing: 1px;
-        padding: 8px 0;
+        padding: 12px 0;
+        button{
+            background-color: $caption-font-color;
+            padding: 8px 10px;
+            border-radius: 4px;
+            color: $caption-background-color;
+            cursor: pointer;
+            font-weight: 700;
+            position: absolute;
+            right: 3px;
+            top: 5px;
+            transition: .5s ease;
+            &:hover{
+                color: $hover-color;
+            }
+        }
     }
-    thead{
+    thead, tfoot{
         th{
             padding: 8px 0;
             background-color: $th-background-color;

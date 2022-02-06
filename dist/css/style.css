@@ -36,30 +36,50 @@ table {
 
 /* line 33, src/assets/scss/style.scss */
 table caption {
+  position: relative;
   background-color: #f79646;
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 8px 0;
+  padding: 12px 0;
 }
 
-/* line 41, src/assets/scss/style.scss */
-table thead th {
+/* line 40, src/assets/scss/style.scss */
+table caption button {
+  background-color: #fff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #f79646;
+  cursor: pointer;
+  font-weight: 700;
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  transition: .5s ease;
+}
+
+/* line 51, src/assets/scss/style.scss */
+table caption button:hover {
+  color: #085c36;
+}
+
+/* line 57, src/assets/scss/style.scss */
+table thead th, table tfoot th {
   padding: 8px 0;
   background-color: #fde9d9;
 }
 
-/* line 47, src/assets/scss/style.scss */
+/* line 63, src/assets/scss/style.scss */
 table tbody th {
   padding: 8px 0;
 }
 
-/* line 50, src/assets/scss/style.scss */
+/* line 66, src/assets/scss/style.scss */
 table tbody tr:nth-child(odd) {
   background-color: #ffcbbb;
 }
 
-/* line 53, src/assets/scss/style.scss */
+/* line 69, src/assets/scss/style.scss */
 table tbody tr:nth-child(even) {
   background-color: #fff;
 }
